@@ -1,0 +1,182 @@
+@font-face {
+  src: url("/fonts/DancingScript-Regular.otf");
+  font-family: dancing;
+}
+
+#b-container {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  background-image: url("https://images.unsplash.com/photo-1549291981-56d443d5e2a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+  display: flex;
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1,
+h3,
+img {
+  margin: 0;
+}
+
+.header h1 {
+  font-size: 60px;
+  margin-bottom: 15px;
+  letter-spacing: 10px;
+  margin: 0 20px;
+  font-family: dancing;
+  color: #0768fb;
+}
+
+h3 {
+  color: cornflowerblue;
+  font-size: 36px;
+  text-align: center;
+  color: black;
+  font-family: dancing;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: cornflowerblue;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: -webkit-pictograph;
+  margin-bottom: 15px;
+  margin-top: 15vh;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#header-logo {
+  font-family: -webkit-pictograph;
+  height: 100px;
+  width: 100px;
+}
+
+.landing-help {
+  display: flex;
+  justify-content: center;
+}
+
+.landing-help > h1 {
+  color: #0768fb;
+  font-size: 60px;
+  font-family: dancing;
+}
+
+#help-link {
+  color: #ff7a00;
+}
+
+/**************** RESPONSIVENESS SMALL ****************/
+@media (max-width: 575.98px) {
+  .title > h1 {
+    font-size: 30px;
+    text-align: center;
+    margin: 0 10px;
+  }
+
+  .subtitle > h3 {
+    font-size: 22px;
+  }
+
+  #header-logo {
+    height: 50px;
+    width: 50px;
+  }
+
+  .landing-help > h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .header {
+    padding: 0 10px;
+  }
+}
+
+/**************** RESPONSIVENESS MEDIUM ****************/
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .title > h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .subtitle > h3 {
+    font-size: 35px;
+  }
+
+  #header-logo {
+    height: 75px;
+    width: 75px;
+  }
+
+  .landing-help > h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .header > h1 {
+    font-size: 50px;
+  }
+
+  .header > h3 {
+    font-size: 40px;
+  }
+
+  .landing-help > h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .landing-help > h1 {
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 0;
+  }
+
+  .header > h3 {
+    font-size: 50px;
+  }
+  .landing-help > h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .landing-help > h1 {
+    font-size: 60px;
+    text-align: center;
+    letter-spacing: 0;
+  }
+
+  .header > h3 {
+    font-size: 60px;
+  }
+  .landing-help > h1 {
+    font-size: 70px;
+    text-align: center;
+  }
+}
